@@ -8,7 +8,8 @@ function wpshout_register_debate_topics( ) {
     $args = array(
       'public' => true,
       'menu_position' => 20,
-      'label'  => 'Debate Topics'
+      'label'  => 'Debate Topics',
+      'supports' => array( 'title', 'editor', 'comments', 'custom-fields'),
     );
     register_post_type( 'debate_topics', $args );
 }

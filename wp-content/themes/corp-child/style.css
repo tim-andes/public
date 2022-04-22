@@ -7,3 +7,14 @@ Author URI:
 Template:       siteorigin-corp
 Version:        0.1.0
 */
+
+/* Keep footer at bottom of page */
+div#wrap {
+    min-height: 100vh;
+}
+
+footer#footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}

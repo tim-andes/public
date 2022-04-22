@@ -19,3 +19,12 @@ function siteorigin_corp_parent_theme_enqueue_styles() {
 		[ 'siteorigin-corp-style' ]
 	);
 }
+
+function default_comments_on( $data ) {
+    if( $data['post_type'] == 'debate_topics' ) {
+        $data['comment_status'] = 1;
+    }
+
+    return $data;
+}
+add_filter( 'wp_insert_post_data', 'default_comments_on' );
