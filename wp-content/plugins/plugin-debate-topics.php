@@ -1,7 +1,7 @@
 <?php
 
-/*
-Plugin Name: Create Debate Topics Post Type
+/**
+* Plugin Name: Create Debate Topics Post Type
 */
 
 function wpshout_register_debate_topics( ) {

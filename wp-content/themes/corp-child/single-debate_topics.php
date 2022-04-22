@@ -1,5 +1,5 @@
 <?php
-/*
+/**
 * Template Name: Debate Topics Single
 * Template Post Type: debate_topics
 */
