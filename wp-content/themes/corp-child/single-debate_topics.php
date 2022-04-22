@@ -16,7 +16,13 @@ get_header();
             $custompost = get_post(get_the_ID());
             echo '<h2>' . $custompost->post_title . '</h2>';
             // output content
-            echo '<p>' . get_the_content('debate_topics') . '</p>';
+            echo '<p>' . $custompost->post_content . '</p>';
+            // If comments are open or we have at least one comment, load up the comment template.
+			if ( comments_open() || get_comments_number() ) {
+				comments_template('debate_topics');
+			}
+
+            // if logged in, show comment form and be able to add comments
         }
     }
     ?>
