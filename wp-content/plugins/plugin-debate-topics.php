@@ -11,6 +11,6 @@ function wpshout_register_debate_topics( ) {
       'label'  => 'Debate Topics',
       'supports' => array( 'title', 'editor', 'comments', 'custom-fields'),
     );
-    register_post_type( 'debate_topics', $args );
+    register_post_type( 'debate-topics', $args );
 }
 add_action( 'init', 'wpshout_register_debate_topics' );
